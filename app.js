@@ -19,3 +19,18 @@ theme.forEach((item) => {
         }
     })
 })
+
+function Traduction() {
+    var para = document.querySelector("#1");
+    para.innerHTML = "The immaculate Conception LaSalle is a clisson college that offers multiple activities";
+    var para1 = document.querySelector("#2");
+    para1.innerHTML = ' and associations. The Immaculate Conception is the conception of the Virgin Mari "without blemish",';
+    var para2 = document.querySelector("#2");
+    para2.innerHTML = ' it is a dogma of the Catholic Church that was proclaimed, on December 8, 1854 by Pope Pius IX by the bull Ineffabilis Deus.';
+    var para3 = document.querySelector("#2");
+    para3.innerHTML = ' But the immaculate conception that I will present you includes several activities.';
+    var para4 = document.querySelector("#2");
+    para3.innerHTML = '';
+}
+
+document.querySelector("#trad").addEventListener("click",Traduction);
