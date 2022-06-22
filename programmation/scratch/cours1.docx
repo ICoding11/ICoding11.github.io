@@ -1,1 +1,19 @@
-Bienvenue dans ce premier cours ! Aujourd'hui nous allons apprendre à manipuler les coordonés.
+Bienvenue dans ce premier cours ! Aujourd'hui nous allons apprendre à manipuler les coordonnés.
+Pour commencer voici un script scratch : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ce script dit au sprite (lutin) d'aller au coordonnés 0 0.
+On a le x qui veut dire abscisse (de gauche à droite)
+On a le y qui veut dire ordonnées (de haut en bas) 
