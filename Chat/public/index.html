@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ICoding11 || Chat</title>
+    <style>
+        #a{
+            border-radius: 30px;
+            background: rgb(197, 9, 226);
+        }
+        #messages{
+            border-radius: 30px;
+            background: rgb(13, 177, 253);
+        }
+        body{
+            background: rgb(50, 109, 225);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <p id="a">MESSAGES</p>
+    <div id="messages"></div>
+    <form action="">
+        <p>Pseudo: </p><input id="ident" autocomplete="off"/>
+    </form>
+    <form action="">
+        <p>Message: </p><input id="msg" autocomplete="off"/><button>Envoyer</button>
+    </form>
+</center>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function ()  {
+
+            var socket = io();
+
+           $("form").submit(function (e) {
+            e.preventDefault();
+
+
+            socket.emit("chat pseudo", $("#ident").val() );
+            $("#ident").val("");
+            socket.emit("chat message", $("#msg").val() );
+            $("#msg").val("");
+
+            return false;
+           }); 
+
+           socket.on("chat message", function (msg) {
+            $("#messages").append($("<p>").text(msg));
+           });
+           socket.on("chat pseudo", function (ident) {
+            $("#messages").append($("<p>").text(ident));
+           });
+        });
+    </script>
+</body>
+</html>
