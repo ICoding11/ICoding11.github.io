@@ -1,17 +1,17 @@
 <?php
-  session_start();
-  require_once 'backend/chat.php';
+    session_start();
+    require_once 'backend/chat.php';
 
-  // Si la personne ne s'est pas connectée 
-  if(!isset($_SESSION['user']))
-  {
-      header('Location: index.php');
-      die();
-  }
+    // Si la personne ne s'est pas connectée 
+    if(!isset($_SESSION['user']))
+    {
+        header('Location: index.php');
+        die();
+    }
 
-  // On appel la methode getMessage()
-  $chat = new Chat();
-  $msg = $chat->getMessage();
+    // On appel la methode getMessage()
+    $chat = new Chat();
+    $msg = $chat->getMessage();
 ?>
 <!DOCTYPE html>
 <html lang="en">
