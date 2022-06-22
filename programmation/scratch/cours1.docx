@@ -17,3 +17,6 @@ Pour commencer voici un script scratch :
 Ce script dit au sprite (lutin) d'aller au coordonnés 0 0.
 On a le x qui veut dire abscisse (de gauche à droite)
 On a le y qui veut dire ordonnées (de haut en bas) 
+On peut se représenter les coordonnés comme de multiples carrés, le carré -1 par exemple, sur l'axe des abscisse sera à gauche (pas tout à gauche).
+
+
