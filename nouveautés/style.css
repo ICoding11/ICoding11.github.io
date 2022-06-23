@@ -1,0 +1,14 @@
+* {
+    border-radius: 30px;
+    padding: 8px;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+h1{
+    color: #FFD700;
+}
+body{
+    background: rgb(0, 123, 255);
+}
